@@ -8,7 +8,7 @@ pipeline {
         }
 		stage('Build'){
 		  steps{
-		       sh 'echo "Build Process Started"'
+		       sh 'echo "Build shuru hogya!!!"'
 			   sh 'javac Hello.java'
 			   sh 'java Hello'
 			   }
