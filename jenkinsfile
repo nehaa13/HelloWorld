@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages {
+        stage('GitCheckout') {
+            steps {
+                checkout scm
+            }
+        }
+		stage('Build'){
+		  steps{
+		       sh 'echo "Build Process Started"'
+			   sh 'javac Hello.java'
+			   sh 'java Hello'
+			   }
+		 }
+    }
+}
